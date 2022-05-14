@@ -1,9 +1,11 @@
 <template>
 
     <header id="site_header">
+        <div class="logo">
+            <img width="150" src="@/assets/img/author-logo-round-200x205.png" alt="">
+        </div>
         <nav id="site_nav" class="navbar navbar-expand-lg navbar-light d-flex justify-content-end pe-5">
-            
-                <div class="navbar-nav h_100" v-for="navSection in navSections" :key="navSection.id">
+             <div class="navbar-nav h_100" v-for="navSection in navSections" :key="navSection.id">
                     <a class="nav-item nav-link d-flex align-items-center" href="#"><span>{{navSection.nome}}</span></a>
                    <!-- MarkUp eliminato perché aggiunto dinamicamente
                     <a class="nav-item nav-link d-flex align-items-center" href="#"><span> About Me</span></a>
@@ -14,8 +16,48 @@
                     <a class="nav-item nav-link d-flex align-items-center" href="#"><span>Contact Me</span></a>
                     <a class="nav-item nav-link d-flex align-items-center" href="#"><span>Icona</span></a> -->
                 </div>
-            
         </nav>
+        <div class="slide_review container w_40 text-white">
+            <h1 class="display-4 mb-3">Damon Vaugh</h1>
+            <div class="row row-cols-1 flex-nowrap overflow-auto flex-column">
+                <div class="col">
+                    <p class="h2 font-weight-bold mb-4">Best selling author and the most influential public intellectual in the western world right now</p>
+                    <p class="newspaper h5 mb-4">- The New York Times</p>
+                </div>
+                <div class="arrows">
+                    <span class="me-1"> fs </span>
+                    <span> fd </span>
+                </div>
+            </div>
+        </div>
+        <div class="small_banners d-flex flex-column">
+            <div class="demos bg-white rounded p-2 mb-2">
+               <span>Icona</span>
+            </div>
+            <div class="on_sale bg-white rounded p-2">
+                <p class="price h4 m-0"><sup>$</sup>39</p>
+                <p class="m-0 text-center">on sale</p>
+            </div>
+        </div>
+        <div class="book_release bg-white">
+            <div class="container h-100 p-5">
+                <div class="row row-cols-2">
+                    <div class="col d-flex align-items-center p-0">
+                        <img width="200" src="@/assets/img/book-widget.png">
+                    </div>
+                    <div class="col align-items-center p-0">
+                        <h4 class="h6">Latest Book Release</h4>
+                        <h5 class="h6">D. Vaughin Autobiography</h5>
+                        <p class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui consequuntur obcaecati amet enim numquam.</p>
+                    </div>
+                    <div class="col d-flex justify-content-center w-100 h-50 py-3 px-0">
+                        <button class="w-50 py-2 buy_amazon"><span>ic</span> Buy on Amazon</button>
+                        <button class="w-50 py-2 buy_appstore"><span>ic</span> Buy on Appstore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
 
 </template>
@@ -69,22 +111,115 @@ export default {
 
 #site_header {
     background-color: blue;
-    height: 500px;
+    height: 650px;
+    position: relative;
+    background-image: url('@/assets/img/hero-07-2x.jpg');
+    box-shadow: inset -20px -100px 150px 100px rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .logo>img {
+        position: absolute;
+        top: 1.5rem;
+        left: 6rem;
+    }
     #site_nav {
-    background-color: cornflowerblue;
+    background-color: transparent;
     height: 100px;
     a {
         display: inline-block;
         height: 100px;
         border-top: 5px solid transparent;
-        color: white;
+        color: #ffffff9a;
         margin-right: 1rem;
         font-size: 14px;
         &:hover {
-            border-top: 5px solid orangered;
-            color: orangered;
+            border-top: 5px solid $author-text-saffron;
+            color: $author-text-saffron;
         }
     }
+    }
+    .slide_review {
+        position: absolute;
+        bottom: 8rem;
+        left: 10rem;
+        h1 {
+            color: $author-text-saffron;
+        }
+        .newspaper {
+            color: $author-text-suva_gray;
+        }
+        .arrows {
+            span {
+            display: inline-block;
+            background-color: $author-text-black;
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            line-height: 35px;
+            transition: 500ms;
+            &:hover {
+                background-color: $author-text-white;
+                color: $author-text-black;
+            }
+        }
+        } 
+    }
+    .small_banners {
+        position: absolute;
+        right: 0.8rem;
+        top: 8rem;
+        .demos{
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            span {
+                line-height: 45px;
+              
+            }
+        }
+        .on_sale{
+            height: 60px;
+            width: 60px;
+            .price {
+                line-height: 30px;
+                text-align: center;
+                color: $author-btn-keppel;
+            }
+            p:last-child {
+                    font-size: 12px;
+                }
+        }
+    }
+    .book_release {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        width: 35%;
+        box-shadow: -20px -20px 50px 20px rgba(0, 0, 0, 0.552);
+        .buy_amazon {
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+            box-shadow: 0 0 10px 3px rgba(173, 216, 230, 0.601);
+            border: 1px solid $author-btn-pumice;
+             transition: 500ms;
+            &:hover {
+                border: 1px solid $author-btn-keppel;
+                background-color: $author-text-white;
+            }
+        }
+        .buy_appstore {
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+            box-shadow: 3px 0 10px 3px rgba(173, 216, 230, 0.607);
+            border: 1px solid $author-btn-pumice;
+             transition: 500ms;
+            &:hover {
+                border: 1px solid $author-btn-keppel;
+                background-color: $author-text-white;
+            }
+        }
     }
 }
 
