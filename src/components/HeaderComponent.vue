@@ -194,16 +194,17 @@ export default {
     .book_release {
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: -1px;
         height: 50%;
         width: 35%;
-        box-shadow: -20px -20px 50px 20px rgba(0, 0, 0, 0.552);
+        box-shadow: 0 -40px 20px 20px rgba(0, 0, 0, 0.552);
         .buy_amazon {
             border-top-left-radius: 0.5rem;
             border-bottom-left-radius: 0.5rem;
             box-shadow: 0 0 10px 3px rgba(173, 216, 230, 0.601);
             border: 1px solid $author-btn-pumice;
-             transition: 500ms;
+            transition: 500ms;
+            font-size: 14px;
             &:hover {
                 border: 1px solid $author-btn-keppel;
                 background-color: $author-text-white;
@@ -214,7 +215,9 @@ export default {
             border-bottom-right-radius: 0.5rem;
             box-shadow: 3px 0 10px 3px rgba(173, 216, 230, 0.607);
             border: 1px solid $author-btn-pumice;
-             transition: 500ms;
+            transition: 500ms;
+            font-size: 14px;
+
             &:hover {
                 border: 1px solid $author-btn-keppel;
                 background-color: $author-text-white;
