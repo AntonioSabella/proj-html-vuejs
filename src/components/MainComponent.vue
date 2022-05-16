@@ -179,7 +179,7 @@
           </div>
         </div>
       </div>
-      <div class="articles_bg container-fluid">
+      <div class="articles_bg container-fluid pb-5">
         <div class="recent_articles container w_80 mx-auto p-5">
           <div class="row row-cols-2 justify-content-between py-3">
             <div class="col w-25">
