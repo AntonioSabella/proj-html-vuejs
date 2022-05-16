@@ -13,7 +13,7 @@ img {
 }
 
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: "DM Serif Display";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -21,6 +21,9 @@ img {
 /* #endregion Commons */
 
 /* #region Utilities */
+.w_10 {
+    width: 10%;
+}
 .w_15 {
     width: 15%;
 }

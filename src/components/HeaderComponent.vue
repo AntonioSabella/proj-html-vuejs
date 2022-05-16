@@ -145,6 +145,7 @@ export default {
         left: 10rem;
         h1 {
             color: $author-text-saffron;
+            font-family: "Kristi", serif;
         }
         .newspaper {
             color: $author-text-suva_gray;
