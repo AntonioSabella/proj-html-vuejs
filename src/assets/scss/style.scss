@@ -21,6 +21,9 @@ img {
 /* #endregion Commons */
 
 /* #region Utilities */
+.w_35 {
+    width: 35%;
+}
 
 .w_40 {
     width: 40%;
@@ -28,6 +31,14 @@ img {
 
 .w_60 {
     width: 60%;
+}
+
+.w_70 {
+    width: 70%;
+}
+
+.w_80 {
+    width: 80%;
 }
 
 .pt_4rem {
@@ -45,6 +56,10 @@ img {
 
 .pb_5rem {
     padding-bottom: 5rem
+}
+
+.p_2rem {
+    padding: 2rem;
 }
 
 /* #endregion Utilities */

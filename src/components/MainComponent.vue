@@ -107,6 +107,135 @@
 
         
       </div>
+      <div class="upcoming_events container-fluid p-5">
+        <div class="titles_events text-center pb-5">
+          <h3>Upcoming Events</h3>
+          <h6 class="text-uppercase">Meet the author in person</h6>
+        </div>
+        <div class="cards_events">
+          <div class="container">
+            <div class="row row-cols-3">
+              <div class="col">
+                  <div class="event card text-center rounded-0">
+                      <img class="card-img-top rounded-0" src="@/assets/img/event-05.jpg" alt="Chicago Book Signing">
+                      <div class="overlay card-body bg-white p_2rem">
+                        <h5 class="card-title pb-3">Chicago Book Signing</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quibusdam possimus perspiciatis. Minus fugiat magni, laudantium iusto illum at.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                 <div class="event card text-center rounded-0">
+                      <img class="card-img-top rounded-0" src="@/assets/img/event-04.jpg" alt="Chicago Book Signing">
+                      <div class="overlay card-body bg-white p_2rem">
+                        <h5 class="card-title pb-3">Meet&Greet with Amanda</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quibusdam possimus perspiciatis. Minus fugiat magni, laudantium iusto illum at.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                 <div class="event card text-center rounded-0">
+                      <img class="card-img-top rounded-0" src="@/assets/img/event-07.jpg" alt="Chicago Book Signing">
+                      <div class="overlay card-body bg-white p_2rem">
+                        <h5 class="card-title pb-3">Open Book: Dialogues</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quibusdam possimus perspiciatis. Minus fugiat magni, laudantium iusto illum at.</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newsletter_subscribe">
+        <div class="container mx-auto w_35 p-5">
+          <div class="newsletter_registration text-center p-5">
+            <h3 class="text-capitalize text-white w-75 mx-auto pb-2">Subscribe To My Newsletter</h3>
+            <h6 class="text-uppercase pb-4">Be notified about book signing tour dates</h6>
+            <form action="">
+              <input type="text" placeholder="insert your email...*">
+              <button>Subscribe</button>
+              <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quasi?</p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="deeper_into container-fluid text-center py-5">
+        <h3 class="text-capitalize">Dig a little deeper into damon vaughn</h3>
+        <h6 class="text-uppercase">Find out more about the author himself</h6>
+        <div class="more_author container mx-auto w_70">
+          <div class="row row-cols-3 gx-4 w_80 mx-auto py-5">
+            <div class="col" v-for="cardBox in cardBoxes" :key="cardBox.id">
+              <div class="card_image">
+                <img :src="cardBox.image_box">
+                <div class="card_text">
+                <h4 class="mb-2">{{cardBox.title}}</h4>
+                <div class="box_border_bottom"></div>
+                <p class="mb-0 pt-3">Vestibulum ante ipsum primis</p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+      <div class="articles_bg container-fluid">
+        <div class="recent_articles container w_80 mx-auto p-5">
+          <div class="row row-cols-2 justify-content-between py-3">
+            <div class="col w-25">
+              <div class="titles_recent_articles">
+                <h3>Recent Articles</h3>
+                <h6>Read the Latest entries</h6>
+              </div>
+
+            </div>
+            <div class="col w-25 d-flex justify-content-end">
+                <div class="all_articles_btn d-flex align-items-end">
+                <a href="#" class="btn">All articles</a>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-2 justify-content-between pb-3">
+            <div class="col w_70 bg-white p-5">
+              <div class="main_article">
+                <div class="main_article_img">
+                  <img src="@/assets/img/20-Tips-800x471.jpg" alt="">
+                </div>
+                <div class="main_article_text">
+                  <h5>20 Creativity Tips</h5>
+                  <div class="article_info">
+                    <p>By <span>admin</span> | October 24th, 2019 | Categories: <span>Event,Trips & Tricks</span></p>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas tenetur, ea amet dolores repellat ducimus tempore nisi? Voluptatibus voluptates aliquam eum odio aspernatur!</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col w-25 bg-white p-4">
+              <div class="secondary_article h-50">
+                  <div class="secondary_article_img">
+                    <img src="@/assets/img/thumb-13-2x-320x202.jpg" alt="">
+                  </div>
+                <h5>What's on your Booklist?</h5>
+                  <div class="article_info">
+                    <p>By <span>admin</span> | October 24th, 2019 | Categories: <span>Event,Trips & Tricks</span></p>
+                  </div>
+              </div>
+              <div class="secondary_article h-50">
+                  <div class="secondary_article_img">
+                    <img src="@/assets/img/thumb-08-2x-320x202.jpg" alt="">
+                  </div>
+                  <h5>What's on your Booklist?</h5>
+                  <div class="article_info">
+                    <p>By <span>admin</span> | October 24th, 2019 | Categories: <span>Event,Trips & Tricks</span></p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </main>
 
 </template>
@@ -137,7 +266,24 @@ export default {
                         name: "Kindle fire",
                         img: require ("@/assets/img/kindlefire-logotan-2x-200x66.png")
                     },
-                ]
+                ],
+           cardBoxes: [
+             {
+               id: 1,
+               image_box: require('@/assets/img/box-1.jpg'),
+               title: 'About Me',
+             },
+                 {
+               id: 2,
+               image_box: require('@/assets/img/box-4.jpg'),
+               title: 'My Latest Book',
+             },
+                 {
+               id: 3,
+               image_box: require('@/assets/img/box-3.jpg'),
+               title: 'Book Signing',
+             }
+           ]
       }
   }
 }
@@ -248,6 +394,126 @@ export default {
           }
         }
       }
+    }
+    .upcoming_events {
+      background-color: $author-bg-brands-dawn_pink;
+      .titles_events {
+        h3 {
+          font-weight: 600;
+          font-size: 35px;
+        }
+        h6 {
+          color:$author-text-saffron;
+          font-weight: 500;
+          font-size: 15px;
+        }
+      }
+      .event {
+      overflow: hidden;
+      img {
+        transition: 500ms;
+        z-index: 1;
+      }
+      .overlay {
+          z-index: 2;
+          h5 {
+            border-bottom: 1px solid $author-btn-pumice;
+          }
+      }
+      }
+      .col:hover .event>img {
+        filter: opacity(0.8);
+        transform: scale(1.2);    
+      }
+     
+    }
+    .newsletter_subscribe {
+      background-image: url('@/assets/img/banner-2.jpg');
+      box-shadow: inset 0 0 100px 300px rgba(0, 0, 0, 0.425);
+      .newsletter_registration {
+        h6 {
+          color: $author-text-saffron;
+          font-size: 14px;
+        }
+        input {
+          width: 55%;
+          padding: 0.6rem;
+          text-align: left;
+          margin-right: 0.8rem;
+          border-radius: 0.4rem;
+          font-size: 14px;
+
+        }
+        button {
+          width: 40%;
+          padding: 0.6rem 2rem;
+          color: $author-text-white;
+          background-color: $author-btn-keppel;
+          border-radius: 0.4rem;
+          font-size: 14px;
+        }
+        p {
+          font-size: 14px;
+          color: $author-text-suva_gray;
+        }
+      }
+    }
+    .deeper_into {
+      .more_author {
+        .col {
+            &:hover .card_image {
+              transform: scale(1.1);
+              box-shadow: 0 0 10px 5px lightgray;
+            }
+          .card_image {
+            height: 350px;
+            border-bottom-right-radius: 3rem;
+            overflow: hidden;
+            position: relative;
+            transition: 600ms;
+            img {
+              height: 100%;
+              object-fit: cover;
+              object-position: 15% 0;
+              transform: scale(1.1);
+              filter: brightness(0.7);
+            }
+            .card_text {
+             position: absolute;
+             left: 3rem;
+             bottom: 1.5rem;
+             .box_border_bottom {
+               height: 40px;
+               width: 45px;
+               position: absolute;
+               border-bottom: 2px solid gray;
+               bottom: 2rem;
+               left: 4rem;
+             }
+             h4 {
+               font-size: 20px;
+               color: $author-text-white;
+             }
+             p {
+               font-size: 14px;
+               color: $author-text-saffron ;
+             }
+              
+          }
+          }
+         
+        }
+      }
+    }
+    .articles_bg {
+      background-color: $author-bg-brands-dawn_pink;
+  /*     .main_article_img {
+        height: 235px;
+        
+        background-image: url('@/assets/img/20-Tips-600x353.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+      } */
     }
 
 }
