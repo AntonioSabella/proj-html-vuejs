@@ -31,10 +31,10 @@
                 <img src="@/assets/img/audible-app-2x-400x418.png" alt="">
               </div>
               <div class="col">
-                <div class="newAudiobook_text text-center pt_5rem px-4">
+                <div class="newAudiobook_text text-center pt_4rem px-4">
                   <h4 class="h2 pb-2">New Audiobook</h4>
                   <h6 class="text-uppercase pb-3">No time to read? No problem. Listen to it</h6>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit <br> Ut non rem voluptate mollitia illo facere possimus dolorum.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Ut non rem voluptate mollitia illo facere possimus dolorum.</p>
                 </div>
                 <div class="audio_brands d-flex justify-content-between">
                   <img width="100" src="@/assets/img/audible-logo.png" alt="">
@@ -61,14 +61,16 @@
           </div>
         </div>
         <div class="row row-cols-2 justify-content-between pb-5">
-          <div class="col w_60 px-4">
+          <div class="col w_60 ps-2 pe-5">
             <div class="author_generation_bg text-white pt_4rem pb_4rem px-5 h-100">
               <div class="author_generation">
                 <h3>Best author of his Generation</h3>
                 <h6>This book will change your perspective on life</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non soluta dolorum tenetur vitae culpa sunt fugit delectus, impedit vel corporis sapiente harum quibusdam explicabo pariatur doloribus sint!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non soluta dolorum tenetur vitae culpa sunt fugit delectus, impedit vel corporis sapiente harum quibusdam explicabo pariatur doloribus sint!</p>
-
+                <div class="times_review d-flex">
+                  <img height="28" src="@/assets/img/nytimes-logo-white-xsmall.png" alt=""> <p>Justine Kilpatric, <span>The New York Times</span></p>
+                </div>
               </div>
             </div>
 
@@ -76,29 +78,29 @@
           <div class="col w_40 ps-4">
             <div class="reviews ">
               <div class="review">
-                <div class="inner_review p-4">
+                <div class="inner_review px-4 pt-4 pb-5">
                   <div class="text_review text-center">
                     <h6>A true masterpiece, Bravo!</h6>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quam aliquam debitis expedita eos rem cum, nostrum repudiandae harum adipisci quisquam dolorum itaque, dicta aut excepturi voluptates, obcaecati dolores inventore totam aperiam.</p>
                   </div>
                   <div class="pseudo-triangle"></div>
                 </div>
-                <div class="newspaper_name d-flex w-50 justify-content-between align-items-center py-3 px-2">
+                <div class="newspaper_name d-flex w-75 align-items-center py-3 px-2">
                   <img height="25" src="@/assets/img/theguardian-xsmall.png" alt="">
-                  <p class="m-0">Nome autore, testata</p>
+                  <p class="m-0 ps-2">Gerard Hendley, The Guardian</p>
                 </div>
               </div>
                <div class="review">
-                <div class="inner_review p-4">
+                <div class="inner_review px-4 pt-4 pb-5">
                   <div class="text_review text-center">
                     <h6>A true masterpiece, Bravo!</h6>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quam aliquam debitis expedita eos rem cum, nostrum repudiandae harum adipisci quisquam dolorum itaque, dicta aut excepturi voluptates, obcaecati dolores inventore totam aperiam.</p>
                   </div>
                   <div class="pseudo-triangle"></div>
                 </div>
-                <div class="newspaper_name d-flex w-50 justify-content-between align-items-center py-3 px-2">
+                <div class="newspaper_name d-flex w-75 align-items-center py-3 px-2">
                   <img height="25" src="@/assets/img/globe-xsmall.png" alt="">
-                  <p class="m-0">Nome autore, testata</p>
+                  <p class="m-0 ps-2">Mary Maxey, The Globe And Mail</p>
                 </div>
               </div>
             </div>
@@ -182,14 +184,14 @@
       <div class="articles_bg container-fluid pb-5">
         <div class="recent_articles container w_80 mx-auto p-5">
           <div class="row row-cols-2 justify-content-between py-3">
-            <div class="col w-25">
+            <div class="col w-25 px-0">
               <div class="titles_recent_articles">
                 <h3>Recent Articles</h3>
-                <h6>Read the Latest entries</h6>
+                <h6 class="text-uppercase">Read the Latest entries</h6>
               </div>
 
             </div>
-            <div class="col w-25 d-flex justify-content-end">
+            <div class="col w-25 d-flex justify-content-end pe-0">
                 <div class="all_articles_btn d-flex align-items-end">
                 <a href="#" class="btn">All articles</a>
               </div>
@@ -204,30 +206,29 @@
                 <div class="main_article_text">
                   <h5>20 Creativity Tips</h5>
                   <div class="article_info">
-                    <p>By <span>admin</span> | October 24th, 2019 | Categories: <span>Event,Trips & Tricks</span></p>
+                    <p>By <strong>admin</strong> | October 24th, 2019 | Categories: <span>Event,Trips & Tricks</span></p>
                   </div>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas tenetur, ea amet dolores repellat ducimus tempore nisi? Voluptatibus voluptates aliquam eum odio aspernatur!</p>
-                </div>
-                
+                </div>    
               </div>
             </div>
             <div class="col w-25 bg-white p-4">
               <div class="secondary_article h-50">
-                  <div class="secondary_article_img">
+                  <div class="secondary_article_img pb-3">
                     <img src="@/assets/img/thumb-13-2x-320x202.jpg" alt="">
                   </div>
                 <h5>What's on your Booklist?</h5>
                   <div class="article_info">
-                    <p>By <span>admin</span> | October 24th, 2019 | Categories: <span>Event,Trips & Tricks</span></p>
+                    <p>October 24th, 2019 | 0 Comments</p>
                   </div>
               </div>
               <div class="secondary_article h-50">
-                  <div class="secondary_article_img">
+                  <div class="secondary_article_img pb-3">
                     <img src="@/assets/img/thumb-08-2x-320x202.jpg" alt="">
                   </div>
-                  <h5>What's on your Booklist?</h5>
+                  <h5>Istanbul Travel Guide</h5>
                   <div class="article_info">
-                    <p>By <span>admin</span> | October 24th, 2019 | Categories: <span>Event,Trips & Tricks</span></p>
+                    <p>October 24th, 2019 | 0 Comments</p>
                   </div>
               </div>
             </div>
@@ -297,17 +298,20 @@ export default {
       text-align: center;
       h2 {
         color: $author-text-saffron;
+        font-family: "Kristi", serif;
+        font-size: 65px;
       }
       p {
         font-weight:500;
         font-size: 25px;
+        font-family: "DM Sans";
       }
       a {
         font-size: 13px;
         padding: 0.4rem 1.2rem;
         background-color: transparent;
-        color: $author-text-black;
-        border: 1px solid $author-text-suva_gray;
+        color: $author-btn-keppel;
+        border: 1px solid $author-btn-keppel;
         &:hover {
         background-color: $author-btn-keppel;
         color: $author-text-white;
@@ -323,14 +327,17 @@ export default {
        background-image: url('@/assets/img/banner.jpg');
        h4 {
          color: $author-text-white;
+         font-size: 25px;
        }
        h6 {
          color: $author-text-saffron;
-         font-size: 13px;
+         font-family: "DM Sans";
+         font-size: 11px;
          word-spacing: 3px;
          font-weight: 400;
        }
        p {
+         font-family: "DM Sans";
          font-size: 12px;
          color: $author-text-suva_gray;
        }
@@ -339,6 +346,8 @@ export default {
     .critics {
       width: 65%;
       h6 {
+        font-family: "DM Sans";
+        font-weight: 600;
         color: $author-btn-keppel;
         font-size: 13px;
         word-spacing: 3px;
@@ -346,27 +355,53 @@ export default {
       }
       .testimonals_button {
         a {
-          color: $author-text-white;
-          background-color: $author-btn-anzac;
+          color: $author-text-black;
+          background-color: transparent;
+          border: 1px solid $author-btn-anzac;
           font-size: 12px;
           padding: 0.4rem 2rem;
           line-height: 20px;
           font-weight: 500;
+          &:hover {
+            color: $author-text-white;
+            background-color: $author-btn-anzac;
+            border: 1px solid transparent; 
+          }
         }
       }
       .author_generation_bg {
         background-image: url('@/assets/img/testimonial2-2x.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: top center;
         border-bottom-right-radius: 3rem;
         box-shadow: inset 5px -50px 120px 50px rgba(0, 0, 0, 0.501);
         .author_generation {
           width: 90%;
           margin: 0 auto;
           h3 {
+            font-size: 30px;
+            padding-top: 2rem ;
             padding-bottom: 2rem;
             border-bottom: 1px solid $author-text-suva_gray;
+          }
+          h6 {
+            font-size: 16px;
+            color: $author-text-white;
+            padding: 1rem 0;
+          }
+          p {
+            font-family: 'DM sans';
+          }
+          .times_review {
+            column-gap: 0.7rem;
+            p {
+              color: $author-text-white;
+            }
+            span {
+              color: $author-btn-keppel;
+              font-weight: 600;
+            }
           }
         }
       }
@@ -387,8 +422,14 @@ export default {
             .text_review {
               background-color: transparent;
               h6 {
-                font-size: 25px;
+                font-family: "DM Serif Display";
+                font-size: 20px;
                 color: $author-text-black;
+              }
+              p {
+                font-family: 'DM sans';
+                font-size: 14px;
+                color: $author-text-suva_gray;
               }
             }
           }
@@ -399,13 +440,14 @@ export default {
       background-color: $author-bg-brands-dawn_pink;
       .titles_events {
         h3 {
-          font-weight: 600;
+          font-weight: 500;
           font-size: 35px;
         }
         h6 {
+          font-family: 'DM sans';
           color:$author-text-saffron;
-          font-weight: 500;
-          font-size: 15px;
+          font-weight: 600;
+          font-size: 16px;
         }
       }
       .event {
@@ -418,6 +460,13 @@ export default {
           z-index: 2;
           h5 {
             border-bottom: 1px solid $author-btn-pumice;
+            font-family: 'DM sans';
+            font-weight: 600;
+            font-size: 22px;
+          }
+          p {
+            font-family: 'DM sans';
+            color: $author-text-suva_gray;
           }
       }
       }
@@ -432,8 +481,10 @@ export default {
       box-shadow: inset 0 0 100px 300px rgba(0, 0, 0, 0.425);
       .newsletter_registration {
         h6 {
+          font-family: 'DM sans';
           color: $author-text-saffron;
-          font-size: 14px;
+          font-size: 13px;
+          font-weight: 600;
         }
         input {
           width: 55%;
@@ -453,7 +504,8 @@ export default {
           font-size: 14px;
         }
         p {
-          font-size: 14px;
+          font-family: 'DM sans';
+          font-size: 13px;
           color: $author-text-suva_gray;
         }
       }
@@ -491,10 +543,12 @@ export default {
                left: 4rem;
              }
              h4 {
+               font-family: 'DM sans';
                font-size: 20px;
                color: $author-text-white;
              }
              p {
+               font-family: 'DM sans';
                font-size: 14px;
                color: $author-text-saffron ;
              }
@@ -507,14 +561,38 @@ export default {
     }
     .articles_bg {
       background-color: $author-bg-brands-dawn_pink;
-  /*     .main_article_img {
-        height: 235px;
-        
-        background-image: url('@/assets/img/20-Tips-600x353.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-      } */
+      .titles_recent_articles {
+        h6 {
+          font-family: 'DM sans';
+          font-weight: 500;
+          color: $author-btn-keppel;
+          font-size: 15px;
+        }
+      }
+      .all_articles_btn {
+        a {
+          padding: 0.3rem 3.5rem;
+          font-size: 13px;
+          font-family: 'DM sans';
+          color: $author-text-black;
+          border: 1px solid $author-btn-anzac;
+          background-color: transparent;
+        }
+        &:hover a {
+          color: $author-text-white;
+          border: 1px solid transparent;
+          background-color: $author-btn-anzac;
+        }
+      }
+      .main_article {
+        font-family: 'DM sans';
+        .main_article_text {
+          padding: 2rem 0 0 0;
+        }
+      }
+      .secondary_article {
+        font-family: 'DM sans';
+      }
     }
-
 }
 </style>

@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fontsource/dm-sans": "^4.5.7",
     "@fontsource/dm-serif-display": "^4.5.7",
     "@fontsource/kristi": "^4.5.9",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

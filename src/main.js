@@ -7,6 +7,7 @@ Vue.use(bootstrap)
 /* Importazione font */
 import "@fontsource/kristi";
 import "@fontsource/dm-serif-display";
+import "@fontsource/dm-sans";
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
