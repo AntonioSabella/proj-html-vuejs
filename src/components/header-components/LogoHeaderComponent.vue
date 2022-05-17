@@ -1,69 +1,16 @@
 <template>
-
-    <header id="site_header">
-
-        <LogoHeaderComponent />
-        <NavComponent />
-        <div class="slide_review container w_40 text-white">
-            <h1 class="mb-3">Damon Vaugh</h1>
-            <div class="row row-cols-1 flex-nowrap overflow-auto flex-column">
-                <div class="col w-100">
-                    <p class="font-weight-bold mb-4">Best selling author and the most influential public intellectual in the western world right now</p>
-                    <p class="newspaper h5 mb-4">- The New York Times</p>
-                </div>
-                <div class="arrows">
-                    <span class="me-1"> <font-awesome-icon icon="fa-solid fa-arrow-left" /> </span>
-                    <span> <font-awesome-icon icon="fa-solid fa-arrow-right" /></span>
-                </div>
-            </div>
+        <div class="logo">
+            <img width="150" src="@/assets/img/author-logo-round-200x205.png" alt="">
         </div>
-        <div class="small_banners d-flex flex-column">
-            <div class="demos bg-white rounded p-2 mb-2">
-               <span><font-awesome-icon icon="fa-solid fa-folder-plus" /></span>
-               <p>Demos</p>
-            </div>
-            <div class="on_sale bg-white rounded p-2">
-                <p class="price h4 m-0"><sup>$</sup>39</p>
-                <p class="m-0 text-center">on sale</p>
-            </div>
-        </div>
-        <div class="book_release bg-white">
-            <div class="container h-100 p-5">
-                <div class="row row-cols-2">
-                    <div class="col d-flex align-items-center p-0">
-                        <img width="200" src="@/assets/img/book-widget.png">
-                    </div>
-                    <div class="col align-items-center p-0">
-                        <h4 class="h5 pt-4">Latest Book Release</h4>
-                        <h5 class="h6 text-uppercase pt-1 pb-2">D. Vaughn Autobiography</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui consequuntur obcaecati amet enim numquam.</p>
-                    </div>
-                    <div class="col d-flex justify-content-center w-100 h-50 py-3 px-0">
-                        <button class="w-50 py-2 buy_amazon"><span class="pe-1"><font-awesome-icon icon="fa-brands fa-amazon" /></span> Buy on Amazon</button>
-                        <button class="w-50 py-2 buy_appstore"><span class="pe-1"><font-awesome-icon icon="fa-brands fa-apple" /></span> Buy on Appstore</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </header>
-
 </template>
 
 <script>
-import NavComponent from '@/components/header-components/NavComponent.vue'
-import LogoHeaderComponent from '@/components/header-components/LogoHeaderComponent.vue'
 export default {
-  name: 'HeaderComponent',
-  components: {
-      NavComponent,
-      LogoHeaderComponent
-  },
+    name: 'LogoHeaderComponent',
 }
 </script>
 
 <style lang='scss' scoped>
-
 #site_header {
     background-color: blue;
     height: 650px;
