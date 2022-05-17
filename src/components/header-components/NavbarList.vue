@@ -22,13 +22,14 @@ export default {
 
 <style lang='scss' scoped>
     #site_nav {
+    font-family: "DM Sans";
     background-color: transparent;
     height: 100px;
     a {
         display: inline-block;
         height: 100px;
         border-top: 5px solid transparent;
-        color: #ffffff9a;
+        color: #ffffffc9;
         margin-right: 1rem;
         font-size: 14px;
         &:hover {

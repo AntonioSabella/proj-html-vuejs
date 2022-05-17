@@ -84,7 +84,7 @@ export default {
         display: inline-block;
         height: 100px;
         border-top: 5px solid transparent;
-        color: #ffffff9a;
+        color: #ffffffc9;
         margin-right: 1rem;
         font-size: 14px;
         &:hover {
@@ -105,6 +105,9 @@ export default {
         p:first-child {
             font-size: 35px;
         }
+        p:last-child {
+            font-family: "DM Sans";
+        }
         .newspaper {
             color: $author-text-suva_gray;
         }
@@ -120,6 +123,7 @@ export default {
             &:hover {
                 background-color: $author-text-white;
                 color: $author-text-black;
+                cursor: pointer;
             }
         }
         } 
@@ -140,6 +144,7 @@ export default {
             p {
                 margin: 0;
                 font-size: 12px;
+                font-family: "DM Sans";
             }
 
         }
@@ -171,8 +176,10 @@ export default {
         p {
             color: $author-text-suva_gray;
             font-size: 12px;
+            font-family: "DM Sans";
         }
         .buy_amazon {
+            font-family: "DM Sans";
             border-top-left-radius: 0.5rem;
             border-bottom-left-radius: 0.5rem;
             box-shadow: 0 0 10px 3px rgba(173, 216, 230, 0.601);
@@ -185,6 +192,7 @@ export default {
             }
         }
         .buy_appstore {
+            font-family: "DM Sans";
             border-top-right-radius: 0.5rem;
             border-bottom-right-radius: 0.5rem;
             box-shadow: 3px 0 10px 3px rgba(173, 216, 230, 0.607);
