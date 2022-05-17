@@ -499,9 +499,16 @@ export default {
           width: 40%;
           padding: 0.6rem 2rem;
           color: $author-text-white;
-          background-color: $author-btn-keppel;
+          background-color: transparent;
+          border: 1px solid  $author-text-white;
           border-radius: 0.4rem;
           font-size: 14px;
+          transition: 600ms;
+          &:hover {
+          color: $author-text-white;
+          background-color: $author-btn-keppel;
+          border: 1px solid  transparent;
+          }
         }
         p {
           font-family: 'DM sans';
@@ -511,6 +518,12 @@ export default {
       }
     }
     .deeper_into {
+      h6 {
+        font-family: 'DM sans';
+        color: $author-btn-keppel;
+        font-size: 14px;
+        font-weight: 600;
+      }
       .more_author {
         .col {
             &:hover .card_image {
