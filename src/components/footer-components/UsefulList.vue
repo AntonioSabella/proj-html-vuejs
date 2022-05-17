@@ -23,6 +23,7 @@ export default {
       ul {
         list-style: none;
         padding: 0;
+        margin: 0.25rem;
       }
       h5 {
         color: $author-text-white;
@@ -37,6 +38,10 @@ export default {
         a {
           text-decoration: none;
           color: $author-btn-pumice;
+          &:hover {
+          color: $author-text-white;
+
+          }
         }
         span {
           color: $author-text-white;

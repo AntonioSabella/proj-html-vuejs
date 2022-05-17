@@ -40,7 +40,7 @@ export default {
         color: $author-btn-pumice;
       }
       li {
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.1rem;
         a {
           text-decoration: none;
           color: $author-btn-pumice;
