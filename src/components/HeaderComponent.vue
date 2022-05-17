@@ -5,7 +5,7 @@
             <img width="150" src="@/assets/img/author-logo-round-200x205.png" alt="">
         </div>
         <nav id="site_nav" class="navbar navbar-expand-lg navbar-light d-flex justify-content-end pe-5">
-             <div class="navbar-nav h_100" v-for="navSection in navSections" :key="navSection.id">
+            <div class="navbar-nav h_100" v-for="navSection in navSections" :key="navSection.id">
                     <a class="nav-item nav-link d-flex align-items-center" href="#"><span>{{navSection.nome}}</span></a>
                    <!-- MarkUp eliminato perché aggiunto dinamicamente
                     <a class="nav-item nav-link d-flex align-items-center" href="#"><span> About Me</span></a>
@@ -15,24 +15,28 @@
                     <a class="nav-item nav-link d-flex align-items-center" href="#"><span>Shop</span></a>
                     <a class="nav-item nav-link d-flex align-items-center" href="#"><span>Contact Me</span></a>
                     <a class="nav-item nav-link d-flex align-items-center" href="#"><span>Icona</span></a> -->
-                </div>
+            </div>
+            <div class="navbar-nav h_100">
+                <a class="nav-item nav-link d-flex align-items-center" href="#"><span><font-awesome-icon icon="fa-solid fa-cart-shopping" /></span></a>
+            </div>
         </nav>
         <div class="slide_review container w_40 text-white">
-            <h1 class="display-4 mb-3">Damon Vaugh</h1>
+            <h1 class="mb-3">Damon Vaugh</h1>
             <div class="row row-cols-1 flex-nowrap overflow-auto flex-column">
-                <div class="col">
-                    <p class="h2 font-weight-bold mb-4">Best selling author and the most influential public intellectual in the western world right now</p>
+                <div class="col w-100">
+                    <p class="font-weight-bold mb-4">Best selling author and the most influential public intellectual in the western world right now</p>
                     <p class="newspaper h5 mb-4">- The New York Times</p>
                 </div>
                 <div class="arrows">
-                    <span class="me-1"> fs </span>
-                    <span> fd </span>
+                    <span class="me-1"> <font-awesome-icon icon="fa-solid fa-arrow-left" /> </span>
+                    <span> <font-awesome-icon icon="fa-solid fa-arrow-right" /></span>
                 </div>
             </div>
         </div>
         <div class="small_banners d-flex flex-column">
             <div class="demos bg-white rounded p-2 mb-2">
-               <span>Icona</span>
+               <span><font-awesome-icon icon="fa-solid fa-folder-plus" /></span>
+               <p>Demos</p>
             </div>
             <div class="on_sale bg-white rounded p-2">
                 <p class="price h4 m-0"><sup>$</sup>39</p>
@@ -46,13 +50,13 @@
                         <img width="200" src="@/assets/img/book-widget.png">
                     </div>
                     <div class="col align-items-center p-0">
-                        <h4 class="h6">Latest Book Release</h4>
-                        <h5 class="h6">D. Vaughin Autobiography</h5>
-                        <p class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui consequuntur obcaecati amet enim numquam.</p>
+                        <h4 class="h5 pt-4">Latest Book Release</h4>
+                        <h5 class="h6 text-uppercase pt-1 pb-2">D. Vaughn Autobiography</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero qui consequuntur obcaecati amet enim numquam.</p>
                     </div>
                     <div class="col d-flex justify-content-center w-100 h-50 py-3 px-0">
-                        <button class="w-50 py-2 buy_amazon"><span>ic</span> Buy on Amazon</button>
-                        <button class="w-50 py-2 buy_appstore"><span>ic</span> Buy on Appstore</button>
+                        <button class="w-50 py-2 buy_amazon"><span class="pe-1"><font-awesome-icon icon="fa-brands fa-amazon" /></span> Buy on Amazon</button>
+                        <button class="w-50 py-2 buy_appstore"><span class="pe-1"><font-awesome-icon icon="fa-brands fa-apple" /></span> Buy on Appstore</button>
                     </div>
                 </div>
             </div>
@@ -96,11 +100,6 @@ export default {
                         id: 7,
                         nome: "Contact Me",
                     },
-                    {
-                        id: 8,
-                        nome: "Icona",
-                        icon: ''
-                    },
                 ]
       }
   }
@@ -141,11 +140,15 @@ export default {
     }
     .slide_review {
         position: absolute;
-        bottom: 8rem;
-        left: 10rem;
+        bottom: 11%;
+        left: 11%;
         h1 {
             color: $author-text-saffron;
             font-family: "Kristi", serif;
+            font-size: 80px;
+        }
+        p:first-child {
+            font-size: 35px;
         }
         .newspaper {
             color: $author-text-suva_gray;
@@ -175,9 +178,15 @@ export default {
             width: 60px;
             text-align: center;
             span {
-                line-height: 45px;
-              
+                line-height: 25px;
+                font-size: 25px;
+                color: $author-text-tundora;
             }
+            p {
+                margin: 0;
+                font-size: 12px;
+            }
+
         }
         .on_sale{
             height: 60px;
@@ -199,6 +208,15 @@ export default {
         height: 50%;
         width: 35%;
         box-shadow: 0 -40px 20px 20px rgba(0, 0, 0, 0.552);
+        h5 {
+            color: $author-text-saffron;
+            font-size: 12px;
+            word-spacing: 0.2rem;
+        }
+        p {
+            color: $author-text-suva_gray;
+            font-size: 12px;
+        }
         .buy_amazon {
             border-top-left-radius: 0.5rem;
             border-bottom-left-radius: 0.5rem;
