@@ -528,7 +528,7 @@ export default {
         .col {
             &:hover .card_image {
               transform: scale(1.1);
-              box-shadow: 0 0 10px 5px lightgray;
+              box-shadow: 0 0 10px 6px $author-btn-pumice;
             }
           .card_image {
             height: 350px;
