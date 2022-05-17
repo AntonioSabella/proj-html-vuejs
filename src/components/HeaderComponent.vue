@@ -4,22 +4,7 @@
         <div class="logo">
             <img width="150" src="@/assets/img/author-logo-round-200x205.png" alt="">
         </div>
-        <nav id="site_nav" class="navbar navbar-expand-lg navbar-light d-flex justify-content-end pe-5">
-            <div class="navbar-nav h_100" v-for="navSection in navSections" :key="navSection.id">
-                    <a class="nav-item nav-link d-flex align-items-center" href="#"><span>{{navSection.nome}}</span></a>
-                   <!-- MarkUp eliminato perché aggiunto dinamicamente
-                    <a class="nav-item nav-link d-flex align-items-center" href="#"><span> About Me</span></a>
-                    <a class="nav-item nav-link d-flex align-items-center" href="#"><span>Testimonials</span></a>
-                    <a class="nav-item nav-link d-flex align-items-center" href="#"><span>My Blog</span></a>
-                    <a class="nav-item nav-link d-flex align-items-center" href="#"><span>Meetups</span></a>
-                    <a class="nav-item nav-link d-flex align-items-center" href="#"><span>Shop</span></a>
-                    <a class="nav-item nav-link d-flex align-items-center" href="#"><span>Contact Me</span></a>
-                    <a class="nav-item nav-link d-flex align-items-center" href="#"><span>Icona</span></a> -->
-            </div>
-            <div class="navbar-nav h_100">
-                <a class="nav-item nav-link d-flex align-items-center" href="#"><span><font-awesome-icon icon="fa-solid fa-cart-shopping" /></span></a>
-            </div>
-        </nav>
+        <NavComponent />
         <div class="slide_review container w_40 text-white">
             <h1 class="mb-3">Damon Vaugh</h1>
             <div class="row row-cols-1 flex-nowrap overflow-auto flex-column">
@@ -67,42 +52,12 @@
 </template>
 
 <script>
+import NavComponent from '@/components/header-components/NavComponent.vue'
 export default {
   name: 'HeaderComponent',
-  data() {
-      return {
-           navSections: [
-                    {
-                        id: 1,
-                        nome: "Home",
-                    },
-                    {
-                        id: 2,
-                        nome: "About Me",
-                    },
-                    {
-                        id: 3,
-                        nome: "Testimonials",
-                    },
-                    {
-                        id: 4,
-                        nome: "My Blog",
-                    },
-                    {
-                        id: 5,
-                        nome: "Meetups",
-                    },
-                    {
-                        id: 6,
-                        nome: "Shop",
-                    },
-                    {
-                        id: 7,
-                        nome: "Contact Me",
-                    },
-                ]
-      }
-  }
+  components: {
+      NavComponent
+  },
 }
 </script>
 
